@@ -27,8 +27,15 @@ const speakers = [
     name: 'Shola Oluyemi',
     role: 'Production & Operations',
     color: 'from-sky-300 to-blue-500',
-    initials: 'S',
+    initials: 'SO',
     emoji: '🎛️',
+  },
+  {
+    name: 'Beston Uche',
+    role: 'Host & FOH Engineer',
+    color: 'from-sky-300 to-blue-500',
+    initials: 'BU',
+    emoji: '🎤', /* Would like a house for an emoji here */
   },
 ];
 

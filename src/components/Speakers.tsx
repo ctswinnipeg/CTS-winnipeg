@@ -24,7 +24,7 @@ const speakers = [
     emoji: '💡',
   },
   {
-    name: 'Sola',
+    name: 'Shola Oluyemi',
     role: 'Production & Operations',
     color: 'from-sky-300 to-blue-500',
     initials: 'S',

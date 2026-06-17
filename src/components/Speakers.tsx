@@ -17,7 +17,7 @@ const speakers = [
     emoji: '🎬',
   },
   {
-    name: 'Adekunle Oluwasanmi',
+    name: 'Kunle Oluwasanmi',
     role: 'FOH Engineer & Lighting',
     color: 'from-blue-400 to-sky-500',
     initials: 'AO',

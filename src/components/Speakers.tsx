@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from './useInView';
+import bestonpic from './images/beston.jpg'; /*  LINKED THE PICTURE HERE FOR BESTON. I added the name in the function. DO the same for other pictures */
+
 
 const speakers = [
   {
@@ -35,7 +37,8 @@ const speakers = [
     role: 'Host & FOH Engineer',
     color: 'from-sky-300 to-blue-500',
     initials: 'BU',
-    emoji: '🎤', /* Would like a house for an emoji here */
+    emoji: '🏠', /* Would like a house for an emoji here! DONE*/
+    image: bestonpic,
   },
 ];
 
@@ -43,7 +46,7 @@ export default function Speakers() {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="speakers" className="relative py-28 sm:py-36 bg-gradient-to-b from-navy-800 via-navy-900 to-white overflow-hidden">
+    <section id="speakers" className="relative py-28 sm:py-36 bg-gradient-to-b from-navy-800 via-navy-900 bg-navy-900 overflow-hidden"> {/* REMOVED TEH BLEND IN GRADIANT! DONE*/}
       {/* Decorative */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent" />
       <div className="absolute top-40 left-10 w-[300px] h-[300px] rounded-full bg-sky-400/5 blur-[100px]" />
@@ -59,7 +62,7 @@ export default function Speakers() {
             Meet the Speakers
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-display)] text-white mb-6">
-            4 Impactful{' '}
+            5 Impactful{' '}
             <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
               Speakers
             </span>{' '}
@@ -82,19 +85,34 @@ export default function Speakers() {
             >
               <div className="card-3d group relative">
                 {/* Card */}
+                
                 <div className="relative rounded-3xl overflow-hidden glass hover:bg-white/[0.08] transition-all duration-500">
                   {/* Avatar area */}
                   <div className={`relative h-56 bg-gradient-to-br ${speaker.color} flex items-center justify-center overflow-hidden`}>
+                    
                     {/* Abstract pattern overlay */}
-                    <div className="absolute inset-0 opacity-20">
+                    <div className="absolute inset-0 opacity-10 z-0 pointer-events-none">
                       <div className="absolute top-4 right-4 w-32 h-32 border-2 border-white/30 rounded-full" />
                       <div className="absolute bottom-4 left-4 w-20 h-20 border-2 border-white/20 rounded-lg rotate-45" />
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-white/10 rounded-full" />
                     </div>
-                    {/* Initials */}
-                    <span className="text-6xl font-bold text-white/90 font-[family-name:var(--font-display)] relative z-10 group-hover:scale-110 transition-transform duration-500">
-                      {speaker.initials}
-                    </span>
+
+                    {/* Initials UPDATED THIS SECTION TO REFLECT PICTURE OR INITIALS. DONE */}
+                   
+                   
+                    {speaker.image ? (
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="relative z-10 w-full h-full object-cover"
+                      />
+                    ) : (
+                      <span className="text-6xl font-bold text-white/90 font-[family-name:var(--font-display)] relative z-10 group-hover:scale-110 transition-transform duration-500">
+                        {speaker.initials}
+                      </span>
+                    )}
+                    
+                    
                     {/* Emoji badge */}
                     <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-lg">
                       {speaker.emoji}

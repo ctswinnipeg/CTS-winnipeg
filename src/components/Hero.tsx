@@ -125,7 +125,7 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-6 sm:gap-10"
         >
           {[
-            { icon: CalendarDays, label: 'July 11, 2026' },
+            { icon: CalendarDays, label: 'August 08, 2026' }, /* update date to august 8th */
             { icon: Clock, label: 'Starting at Noon' },
             { icon: MapPin, label: '341 Willton St, Winnipeg' },
           ].map((item, i) => (

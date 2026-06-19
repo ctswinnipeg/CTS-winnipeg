@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from './useInView';
 
 function getTimeLeft() {
-  const target = new Date('2026-07-11T12:00:00-05:00').getTime();
+  const target = new Date('2026-08-08T12:00:00-05:00').getTime(); /* Update date to august 8th*/
   const now = Date.now();
   const diff = Math.max(0, target - now);
 

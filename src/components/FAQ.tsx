@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How many speakers will there be?',
-    a: 'We have 4 impactful speakers lined up: Joshua Alonge, Wole Adebari, Adekunle Oluwasanmi, and Sola — each bringing their unique expertise in worship technology.',
+    a: 'We have 5 impactful speakers lined up: Joshua Alonge, Wole Adebari, Adekunle Oluwasanmi, Shola Oluyemi and Beston Uche — each bringing their unique expertise in worship technology.',
   },
   {
     q: 'Will there be resources available after the event?',

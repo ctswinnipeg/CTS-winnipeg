@@ -62,7 +62,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span className="text-sm text-blue-200/80 font-medium">July 11, 2026 · Winnipeg, MB</span>
+            <span className="text-sm text-blue-200/80 font-medium">August 08, 2026 · Winnipeg, MB</span>
           </div>
         </motion.div>
 

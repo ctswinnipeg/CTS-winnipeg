@@ -3,6 +3,8 @@ import { useInView } from './useInView';
 import bestonpic from './images/beston.jpg'; /*  LINKED THE PICTURE HERE FOR BESTON. I added the name in the function. DO the same for other pictures */
 
 
+/* ADD SPEAKER PICTURE LINK HERE, USING THIS FOR TESTING */
+
 const speakers = [
   {
     name: 'Joshua Alonge',
